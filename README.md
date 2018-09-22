@@ -32,6 +32,8 @@ A watcher process runs continuously until is it aborted (with a ^C or a signal).
 
 Most recent scores
 ------------------
+| Player Name | Score |
+| --- | --- |
 |Captain America   |   109569 **|
 |Thor              |    99874|
 |Captain America   |   175010 **| 
@@ -41,12 +43,15 @@ Most recent scores
 
 Highest scores
 --------------
-Prof Freeh        972430194
-Prof Freeh        883284030
-Prof Freeh        873920103
-Prof Freeh        859883839
-Prof Freeh        859893835
-Bob                  202014  **
+| Player Name | Score |
+| --- | --- |
+|Prof Freeh     |   972430194|
+|Prof Freeh     |   883284030|
+|Prof Freeh     |   873920103|
+|Prof Freeh     |   859883839|
+|Prof Freeh     |   859893835|
+|Bob            |      202014  **|
+
 The stars at the end of each line indicate that the player is online. Watcher accepts two parameters. The first is the IP address (and optional port number). The second sets the size of the lists. The maximum list size is 25.
 
 The watcher will redisplay the list any time there is a change in the state. Basically, after every player action.
@@ -121,10 +126,10 @@ Testing
 
 The programs will be tested using the following commands.
 
-* watcher 12.34.45.87:6666 N -- where N is an integer
-* player 12.34.45.87:6666 name
-* player 12.34.45.87:6666 "first last"
-* player 12.34.45.87:6666 name count delay score
+* `watcher 12.34.45.87:6666 N` -- where N is an integer
+* `player 12.34.45.87:6666 name`
+* `player 12.34.45.87:6666 "first last"`
+* `player 12.34.45.87:6666 name count delay score`
 
 Programs will be tested with invalid input.
 
@@ -138,7 +143,7 @@ IP address
 
 Each client must know the IP address for the server node to which it must connect. By default the Zookeeper server will listen on port 6000. However, the server can listen on other ports. Specify the server IP address and optional port as follows.
 
-xx.xx.xx.xx[:yyyy]
+`xx.xx.xx.xx[:yyyy]`
 
 
 Environment
@@ -149,4 +154,4 @@ The testing will be performed on VCL nodes. The VCL instances will be Ubuntu 16.
 If it does not run correctly in this environment, it is wrong no matter how many other environments it works on.
 
 
-CSC 591 -- Data-Intensive Computing
+`CSC 591 -- Data-Intensive Computing`
