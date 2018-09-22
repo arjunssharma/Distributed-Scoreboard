@@ -31,12 +31,12 @@ Watcher details
 A watcher process runs continuously until is it aborted (with a ^C or a signal). It initially displays the two lists. This course is not concerned with GUIs and such cute stuff; therefore, the lists are displayed in the terminal. For example:
 
 Most recent scores
-Captain America   |   109569 **
-Thor              |    99874
-Captain America   |   175010 ** 
-Smaug             |     5015 **
-Thor              |   111111 
-Bob               |   202014 **
+|Captain America   |   109569 ** |
+|Thor              |    99874    |
+|Captain America   |   175010 ** | 
+|Smaug             |     5015 ** |
+|Thor              |   111111    |
+|Bob               |   202014 ** |
 
 Highest scores
 --------------
